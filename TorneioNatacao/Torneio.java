@@ -1,9 +1,14 @@
 package TorneioNatacao;
 
+import java.util.Scanner;
+
 public class Torneio {
 public static void main(String[] args) {
-    String nome = "Participante";
-    int idade =18;
+    Scanner input = new Scanner(System.in);
+    System.out.println("Digite o nome do Participante: ");
+    String nome = input.next();
+    System.out.println("Digite a idade do participante aqui: ");
+    int idade = input.nextInt();
     if(idade < 10){
         System.out.println(nome + " Participara da Categoria Infantil");
     } else if(idade >= 11 && idade <= 15){
